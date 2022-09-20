@@ -1,0 +1,240 @@
+.banner {
+  height: 37.5rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.banner .banner__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .banner__overlay {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 48, 58, 0.4);
+}
+
+.banner .banner__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem;
+  align-items: center;
+  width: 37.5rem;
+}
+
+.banner .banner__title {
+  color: var(--alt-text-color);
+  font-size: 2.75rem;
+  font-weight: 900;
+  line-height: 1.3636;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.banner .banner__button {
+  padding: 0.625rem 2rem;
+  color: var(--alt-text-color);
+  background: var(--accent-color);
+  border-radius: 0.25rem;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 5.875rem 0;
+  background: var(--primary-color);
+}
+
+.features .features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  width: 16.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.feature .feature__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.5rem;
+  background: #f5f4fa;
+  border-radius: 0.25rem;
+}
+
+.feature .feature__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.feature .feature__title {
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.feature .feature__description {
+  color: var(--sub-text-color);
+  line-height: 1.714;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
+  padding-bottom: 5.875rem;
+}
+
+.services .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.125rem;
+}
+
+.services .services__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  display: flex;
+  align-items: flex-end;
+  width: 23.125rem;
+  height: 18.375rem;
+  background-size: cover;
+}
+
+.service .service__title-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 1.75rem;
+}
+
+.service .service__title {
+  color: var(--alt-text-color);
+  text-transform: uppercase;
+}
+
+.our-team {
+  display: flex;
+  justify-content: center;
+  background: #f5f3fa;
+  padding: 5.875rem 0;
+}
+
+.our-team .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+.our-team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0px 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12),
+    0px 0.0625rem 0.0625rem rgba(0, 0, 0, 0.14),
+    0px 0.125rem 0.0625rem rgba(0, 0, 0, 0.2);
+}
+
+.team-member .team-member__image {
+  width: 16.875rem;
+  height: 16.25rem;
+}
+
+.team-member .team-member__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.875rem;
+}
+
+.team-member .team-member__names {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.team-member .team-member__name {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.team-member .team-member__position {
+  color: var(--sub-text-color);
+}
+
+.our-clients {
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
+  padding: 5.875rem 0;
+}
+
+.our-clients .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+.our-clients .our-clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-client {
+  width: 10.625rem;
+  height: 5.75rem;
+  border: 0.0625rem solid #afb1b8;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.our-client .our-client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.our-client:hover {
+  border-color: var(--accent-color);
+  transition: border-color 0.3s ease;
+}
+
+.our-client:hover .our-client__icon {
+  fill: var(--accent-color);
+  transition: fill 0.3s ease;
+}
