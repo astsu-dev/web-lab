@@ -1,0 +1,129 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 3.75rem 0;
+  background: var(--secondary-color);
+}
+
+.footer .footer__container {
+  display: flex;
+  justify-content: center;
+  gap: 5.75rem;
+}
+
+.footer .footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer .footer__section-title {
+  font-size: 0.875rem;
+  color: var(--alt-text-color);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer .footer__socials-container,
+.footer .footer__subscription {
+  padding-top: 0.75rem;
+}
+
+.footer .footer__contacts-and-socials {
+  display: flex;
+  gap: 4.375rem;
+}
+
+.footer .logo {
+  color: var(--alt-text-color);
+}
+
+.footer .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5625rem;
+  width: max-content;
+}
+
+.footer .footer__contacts-link,
+.footer .footer__address {
+  line-height: 1.715;
+}
+
+.footer .footer__contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .footer__address {
+  color: var(--alt-text-color);
+}
+
+.footer .social {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social .social__icon {
+  fill: var(--primary-color);
+}
+
+.footer .social:hover {
+  background: var(--accent-color);
+}
+
+.footer .footer__subscription {
+  width: 100%;
+}
+
+.footer .footer__subscription-form {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer .footer__subscription-input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.25rem;
+  color: var(--alt-text-color);
+  font-size: 1rem;
+}
+
+.footer .footer__subscription-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .footer__subscription-button {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  fill: var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .footer .footer__container {
+    margin: 0 4.75rem;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+
+  .footer .footer__contacts-and-socials {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer .footer__container {
+    margin: 0 4.75rem;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+
+  .footer .footer__contacts-and-socials {
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+
+  .footer .footer__subscription-form {
+    flex-direction: column;
+  }
+}

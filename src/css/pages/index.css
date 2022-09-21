@@ -3,13 +3,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-}
-
-.banner .banner__image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-position: center;
 }
 
 .banner .banner__overlay {
@@ -40,32 +34,20 @@
   margin: 0;
 }
 
-.banner .banner__button {
-  padding: 0.625rem 2rem;
-  color: var(--alt-text-color);
-  background: var(--accent-color);
-  border-radius: 0.25rem;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  font-size: 1rem;
-  font-weight: 700;
-  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
-}
-
 .features {
   display: flex;
   justify-content: center;
-  padding: 5.875rem 0;
+  padding: var(--section-padding) 0;
   background: var(--primary-color);
 }
 
 .features .features__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 1.875rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .feature {
-  width: 16.875rem;
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
@@ -100,7 +82,7 @@
   display: flex;
   justify-content: center;
   background: var(--primary-color);
-  padding-bottom: 5.875rem;
+  padding-bottom: var(--section-padding);
 }
 
 .services .container {
@@ -140,7 +122,7 @@
   display: flex;
   justify-content: center;
   background: #f5f3fa;
-  padding: 5.875rem 0;
+  padding: var(--section-padding) 0;
 }
 
 .our-team .container {
@@ -150,8 +132,9 @@
 }
 
 .our-team__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 1.875rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .team-member {
@@ -166,8 +149,7 @@
 }
 
 .team-member .team-member__image {
-  width: 16.875rem;
-  height: 16.25rem;
+  width: 100%;
 }
 
 .team-member .team-member__info {
@@ -199,7 +181,7 @@
   display: flex;
   justify-content: center;
   background: var(--primary-color);
-  padding: 5.875rem 0;
+  padding: var(--section-padding) 0;
 }
 
 .our-clients .container {
@@ -209,12 +191,13 @@
 }
 
 .our-clients .our-clients__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.875rem;
 }
 
 .our-client {
-  width: 10.625rem;
+  /* width: 10.625rem; */
   height: 5.75rem;
   border: 0.0625rem solid #afb1b8;
   border-radius: 0.25rem;
@@ -237,4 +220,57 @@
 .our-client:hover .our-client__icon {
   fill: var(--accent-color);
   transition: fill 0.3s ease;
+}
+
+@media screen and (max-width: 1280px) {
+  .banner .banner__title {
+    font-size: 2.25rem;
+  }
+
+  .features .features__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services {
+    display: none;
+  }
+
+  .our-team .our-team__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .our-clients .our-clients__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header .header__contacts {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .features .features__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-team .our-team__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .features .features__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-team .our-team__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-clients .our-clients__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
