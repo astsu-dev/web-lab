@@ -244,13 +244,6 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .header .header__contacts {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-}
-
 @media screen and (max-width: 910px) {
   .features .features__list {
     grid-template-columns: repeat(2, 1fr);

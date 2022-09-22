@@ -1,8 +1,15 @@
-import { defineConfig } from "vite";
+import path from 'path';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: "src",
+  root: 'src',
   build: {
-    outDir: "../dist",
+    outDir: '../dist',
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'src', 'index.html'),
+        portfolio: path.resolve(__dirname, 'src', 'portfolio/index.html'),
+      },
+    },
   },
 });

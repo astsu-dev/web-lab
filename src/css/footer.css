@@ -109,9 +109,22 @@
   .footer .footer__contacts-and-socials {
     justify-content: space-between;
   }
+
+  .footer .footer__section {
+    align-items: center;
+  }
+
+  .footer .footer__contacts {
+    align-items: center;
+  }
+
+  .footer .footer__subscription-form {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 620px) {
   .footer .footer__container {
     margin: 0 4.75rem;
     flex-direction: column;
@@ -119,11 +132,8 @@
   }
 
   .footer .footer__contacts-and-socials {
+    justify-content: start;
     flex-direction: column;
     gap: 3.75rem;
-  }
-
-  .footer .footer__subscription-form {
-    flex-direction: column;
   }
 }
