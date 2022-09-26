@@ -22,7 +22,6 @@ body {
   font-weight: 700;
   font-size: 1.625rem;
   color: var(--text-color);
-  /* letter-spacing: 0.03em; */
 }
 
 .logo .logo__first-part {
