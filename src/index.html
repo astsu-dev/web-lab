@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/pages/index.css" />
     <title>Web Studio</title>
+    <script defer src="main.ts"></script>
   </head>
 
   <body>
@@ -39,7 +40,9 @@
                   d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
                 />
               </svg>
-              <span class="header__contact-text">info@devstudio.com</span>
+              <span class="header__contact-text header__contact-mail-text"
+                >info@devstudio.com</span
+              >
             </a>
             <a class="header__contact" href="tel:+380961111111">
               <svg
@@ -56,17 +59,21 @@
                   d="M2.35355 13.7388C2.54882 13.9212 2.54882 14.2168 2.35355 14.3991C2.15828 14.5815 1.84172 14.5815 1.64645 14.3991C1.45118 14.2168 1.45118 13.9212 1.64645 13.7388C1.84172 13.5565 2.15828 13.5565 2.35355 13.7388Z"
                 />
               </svg>
-              <span class="header__contact-text">+38 096 111 11 11</span>
+              <span class="header__contact-text header__contact-phone-text"
+                >+38 096 111 11 11</span
+              >
             </a>
           </div>
-          <div class="menu__button">
-            <span class="menu__button-line"></span>
-            <span class="menu__button-line menu__button-line_center"></span>
-            <span class="menu__button-line"></span>
-          </div>
         </nav>
+        <button class="menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line menu-button__line_center"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
     </header>
+
+    <div class="menu-popup none"></div>
 
     <main class="main">
       <section
@@ -82,7 +89,7 @@
       </section>
       <section class="features">
         <div class="container">
-          <h2 style="display: none">Характеристики</h2>
+          <h2 class="hidden">Характеристики</h2>
           <ul class="features__list">
             <li class="feature">
               <div class="feature__icon-container">

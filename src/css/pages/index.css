@@ -223,12 +223,8 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .banner .banner__title {
-    font-size: 2.25rem;
-  }
-
   .features .features__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .services {
@@ -236,20 +232,24 @@
   }
 
   .our-team .our-team__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .our-clients .our-clients__list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (max-width: 910px) {
-  .features .features__list {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .our-team .our-team__list {
+  .our-clients .our-clients__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner__container {
+    width: 25rem;
+  }
+
+  .banner .banner__title {
+    font-size: 1.625rem;
+  }
+
+  .our-clients .our-clients__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -261,9 +261,5 @@
 
   .our-team .our-team__list {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .our-clients .our-clients__list {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
