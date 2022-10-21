@@ -223,12 +223,14 @@
   }
 
   .header.header_menu-active .menu .menu__list {
+    width: 100%;
     flex: 1;
     flex-direction: column;
     height: max-content;
     font-size: 2.5rem;
     line-height: 1.175;
     gap: 0;
+    overflow-y: auto;
   }
 
   .header.header_menu-active .menu .menu__link {
