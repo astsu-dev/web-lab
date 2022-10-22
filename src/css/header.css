@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: var(--primary-color);
   z-index: 10;
+  overflow-y: auto;
 }
 
 .header::after {
@@ -194,7 +195,7 @@
   .header.header_menu-active {
     align-items: flex-start;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
   }
 
