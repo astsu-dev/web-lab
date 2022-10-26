@@ -1,0 +1,65 @@
+.form-popup .form-popup__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-popup .form-popup__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.form-popup .form-popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-popup .form-popup__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-popup .form-popup__form-textarea {
+  resize: none;
+  padding-left: 0.75rem;
+  height: 7.5rem;
+}
+
+.form-popup .form-input__input {
+  width: 100%;
+}
+
+.form-popup .form-popup__subscription-agree {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.875rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  align-self: center;
+}
+
+.form-popup .form-popup__subscription-agree-checkbox {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 4px;
+  background: var(--accent-color);
+}
+
+.form-popup .form-popup__subscription-agree-label {
+  color: var(--sub-text-color);
+  line-height: 1.166;
+}
+
+.form-popup .form-popup__subscription-agree-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.form-popup .form-popup__button {
+  padding: 0.625rem 3.4375rem;
+  align-self: center;
+}

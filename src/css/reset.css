@@ -17,9 +17,11 @@ ol {
 button {
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
-input {
-  all: unset;
+input,
+textarea {
+  outline: none;
 }

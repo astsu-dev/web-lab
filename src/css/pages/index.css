@@ -11,6 +11,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 0 1.875rem;
   background: rgba(47, 48, 58, 0.4);
 }
 
@@ -197,7 +198,6 @@
 }
 
 .our-client {
-  /* width: 10.625rem; */
   height: 5.75rem;
   border: 0.0625rem solid #afb1b8;
   border-radius: 0.25rem;
