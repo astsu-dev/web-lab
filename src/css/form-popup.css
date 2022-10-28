@@ -37,7 +37,6 @@
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 1.875rem;
-  cursor: pointer;
   font-size: 0.875rem;
   align-self: center;
 }
@@ -47,11 +46,13 @@
   height: 1rem;
   border-radius: 4px;
   background: var(--accent-color);
+  cursor: pointer;
 }
 
 .form-popup .form-popup__subscription-agree-label {
   color: var(--sub-text-color);
   line-height: 1.166;
+  cursor: pointer;
 }
 
 .form-popup .form-popup__subscription-agree-link {
